@@ -28,4 +28,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Preview
+[Globe](https://martenorio.github.io/globe-threejs/)
 ![Project](https://github.com/martenorio/globe-threejs/blob/main/img/globe.png "preview")
