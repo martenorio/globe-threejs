@@ -203,13 +203,12 @@ const mouse = {
   yPrev:undefined,
 }
 
-console.log(group.children);
+// console.log(group.children);
 
 const raycaster = new THREE.Raycaster();
 const popUpEl = document.querySelector('#popUpEl');
 const populationEl = document.querySelector('#populationEl');
 const populationValueEl = document.querySelector('#populationValueEl');
-console.log(popUpEl);
 
 function animate(){
   requestAnimationFrame(animate);
@@ -337,7 +336,7 @@ addEventListener('touchmove', (event) => {
   const doesIntersect = raycaster.intersectObjects(group.children.filter( mesh => {
     return mesh.geometry.type === 'BoxGeometry'
   }) );
-  console.log(doesIntersect);
+  // console.log(doesIntersect);
   if(doesIntersect.length === 0)  return
   mouse.down = true;
   
@@ -345,7 +344,7 @@ addEventListener('touchmove', (event) => {
   mouse.x = (event.clientX - innerWidth) * 2 - 1;
   mouse.y = -((event.clientY - offset) / innerHeight) * 2 + 1;
 
-  console.log(mouse.y)
+  // console.log(mouse.y)
   
   gsap.set(popUpEl, {
     x:event.clientX,
